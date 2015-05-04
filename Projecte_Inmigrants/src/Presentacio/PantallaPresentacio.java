@@ -66,10 +66,12 @@ public class PantallaPresentacio extends JFrame {
 		JButton btnHistorialInmigrant = new JButton("Historial");
 		btnHistorialInmigrant.setBounds(51, 102, 117, 29);
 		contentPane.add(btnHistorialInmigrant);
+		btnHistorialInmigrant.setEnabled(false);
 		
 		JButton btnHistorialAmfitrio = new JButton("Historial");
 		btnHistorialAmfitrio.setBounds(263, 102, 117, 29);
 		contentPane.add(btnHistorialAmfitrio);
+		btnHistorialAmfitrio.setEnabled(false);
 	}
 	
 	private void gestioImPremut(){
