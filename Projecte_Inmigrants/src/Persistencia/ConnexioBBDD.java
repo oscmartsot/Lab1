@@ -24,11 +24,13 @@ public class ConnexioBBDD implements Connection{
 
 	private Connection connexio;
 
-	public ConnexioBBDD(String usr, String pass) throws Exception{
+	public ConnexioBBDD() throws Exception{
 		// TODO Auto-generated constructor stub
 		try{
 			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
 			String url = "jdbc:oracle:thin:@rama.eupmt.es:1521:logo10";
+			String usr = "G5GEILAB1";
+			String pass ="G5LABINF1P15";
 			this.connexio = DriverManager.getConnection(url, usr, pass);
 		}catch(Exception e){
 			throw new Exception("Error ConnexioBBDD: " + e.getMessage());
