@@ -77,4 +77,7 @@ public class DonarAlta extends JFrame {
 		label_2.setBounds(10, 154, 83, 20);
 		contentPane.add(label_2);
 	}
+	
+	
+	
 }
