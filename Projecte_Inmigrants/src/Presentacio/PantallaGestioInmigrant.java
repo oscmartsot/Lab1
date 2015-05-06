@@ -1,24 +1,19 @@
 package Presentacio;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JTextField;
-import javax.swing.JLabel;
 import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
 
 public class PantallaGestioInmigrant extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
 
-	/**
-	 * Create the frame.
-	 */
 	public PantallaGestioInmigrant(PantallaPresentacio pantalla) {
+	
 		pantalla.dispose();
 		this.setVisible(true);
 		setTitle("Gestió Inmigrant");
@@ -46,6 +41,10 @@ public class PantallaGestioInmigrant extends JFrame {
 		JLabel lblIntrodueixUnPasaport = new JLabel("Introdueix un pasaport vàlid");
 		lblIntrodueixUnPasaport.setBounds(82, 34, 207, 16);
 		contentPane.add(lblIntrodueixUnPasaport);
+	}
+	
+	private void altaImigrant(){
+		
 	}
 
 }

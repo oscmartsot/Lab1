@@ -1,12 +1,14 @@
 package Domini;
 
-public class Amfitrio extends Persona{
+public class Amfitrio extends Persona {
 
-	public Amfitrio(String filiacio, String domicili, String dni) {
-		super(filiacio, domicili);
-		
+	private String dni;
+
+	public Amfitrio(String filiacio, String domicili, String nom,
+			String cognom, String dni) {
+		super(filiacio, domicili, nom, cognom);
+
+		this.dni = dni;
 	}
-
-	
 
 }
